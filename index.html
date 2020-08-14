@@ -55,13 +55,46 @@
     <!--main-->
     <main class="main">
         <!--hero-->
-        <section class="main-section hero">            
+        <section class="main-section hero">
                 <h1 class="hero-title">
                     эффективные решения<br />
                     для вашего бизнеса
                 </h1>
                 <div class="hero-button">
                     <button class="hero-btn">Заказать услугу</button>
+                    <div class="hero-btn-form">
+                        <form class="hero-form">
+                            <div><button type="button" class="form-clouse-button"></button></div>
+                            <p class="hero-form-head">Оставьте свои данные, мы вам перезвоним</p>
+                           <div>
+                               <label for="user-name" class="contact-lable">Имя</label>
+                               <input type="text" class="contact-form form-input" id="user-name">
+                           </div>
+                           <div>
+                               <label for="user-telephone" class="contact-lable">Телефон</label>
+                               <input type="tel" class="contact-form form-input" id="user-telephone">
+                           </div>
+                           <div>
+                               <label for="user-mail" class="contact-lable">Почта</label>
+                               <input type="email" class="contact-form form-input" id="user-mail">
+                           </div>
+                           <div>
+                                <label for="comment" class="contact-lable">Комментарий</label>
+                                <textarea name="comment" class="contact-form form-comment" id="comment"></textarea>
+                           </div>
+                           <!--потрібно розмістити умови договору-->
+                           <div>
+                               <input type="checkbox" name="" id="">
+                               <label for="" class="hero-form-agreement">
+                                   Соглашаюсь с рассылкой и принимаю 
+                                   <span>
+                                       <a href="#agreement" class="agreement-link">Условия договора</a>
+                                   </span>
+                                </label>
+                           </div>
+                           <button type="submit" class="hero-btn">Отправить</button>                            
+                        </form>
+                    </div>
                 </div>                                                                                
         </section>
         <!--features-->
