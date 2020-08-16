@@ -61,44 +61,7 @@
                     для вашего бизнеса
                 </h1>
                 <div class="hero-button">
-                    <button class="hero-btn">Заказать услугу</button>
-                    <div class="modal-close-button">
-                        <div class="hero-btn-form">
-                            <button type="button" class="form-close-button"></button>
-                            <form class="hero-form">                            
-                                <p class="hero-form-head">Оставьте свои данные, мы вам перезвоним</p>
-                                <ul class="contact-label-input list">
-                                    <li class="label-input-item">
-                                        <label for="user-name" class="contact-lable">Имя</label>
-                                        <input type="text" class="contact-form form-input" id="user-name">
-                                    </li>
-                                    <li class="label-input-item">
-                                        <label for="user-telephone" class="contact-lable">Телефон</label>
-                                        <input type="tel" class="contact-form form-input" id="user-telephone">
-                                    </li>
-                                    <li class="label-input-item">
-                                        <label for="user-mail" class="contact-lable">Почта</label>
-                                        <input type="email" class="contact-form form-input" id="user-mail">
-                                    </li>
-                                    <li class="label-input-item">
-                                        <label for="comment" class="contact-lable">Комментарий</label>
-                                        <textarea name="comment" class="contact-form form-comment" id="comment"></textarea>
-                                    </li>
-                                </ul>
-                               <!--потрібно розмістити умови договору-->
-                               <div class="hero-ckbx-agreement">
-                                   <input type="checkbox" name="" id="">
-                                   <label for="" class="hero-form-agreement">
-                                       Соглашаюсь с рассылкой и принимаю 
-                                       <span>
-                                           <a href="#agreement" class="agreement-link">Условия договора</a>
-                                       </span>
-                                    </label>
-                               </div>
-                               <button type="submit" class="hero-btn">Отправить</button>                            
-                           </form>
-                        </div>
-                    </div>
+                    <button data-modal-open class="hero-btn">Заказать услугу</button>
                 </div>                                                                                
         </section>
         <!--features-->
@@ -438,5 +401,46 @@
             <p class="footer-basement">2020 | <span lang="en">Developed by GoIT Students</span>></p>
         </div>        
     </footer>
+
+    <div data-modal class="backdrop is-hidden">
+        <!--div class="hero-btn-form"-->
+            
+            <form class="hero-form">                            
+                <p class="hero-form-head">Оставьте свои данные, мы вам перезвоним</p>
+                <button type="button" class="form-close-button"></button>
+                <ul class="contact-label-input list">
+                    <li class="label-input-item">
+                        <label for="user-name" class="contact-lable">Имя</label>
+                        <input type="text" class="contact-form form-input" id="user-name">
+                    </li>
+                    <li class="label-input-item">
+                        <label for="user-telephone" class="contact-lable">Телефон</label>
+                        <input type="tel" class="contact-form form-input" id="user-telephone">
+                    </li>
+                    <li class="label-input-item">
+                        <label for="user-mail" class="contact-lable">Почта</label>
+                        <input type="email" class="contact-form form-input" id="user-mail">
+                    </li>
+                    <li class="label-input-item">
+                        <label for="comment" class="contact-lable">Комментарий</label>
+                        <textarea name="comment" class="contact-form form-comment" id="comment" placeholder="Введите текст"></textarea>
+                    </li>
+                </ul>
+               <!--потрібно розмістити умови договору-->
+               <label for="" class="hero-form-agreement">
+                    <input type="checkbox" name="" id="" value="agree" class="agreement-checkbox-hidden">
+                    <span class="agreement-checkbox">
+
+                    </span>
+                    <span class="agreement-discription">
+                        Соглашаюсь с рассылкой и принимаю 
+                       <a href="#agreement">Условия договора</a>
+                    </span>
+                </label>
+               <button type="submit" class="hero-btn">Отправить</button>                            
+           </form>
+        <!--/div-->
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -10,7 +10,6 @@
     --background-team-color: #E5E5E5;
     --footer-basement-color: rgba(255, 255, 255, 0.4);
     --footer-address-item-color: rgba(255, 255, 255, 0.6);
-
 }
 
 body {
@@ -268,98 +267,14 @@ img {
     letter-spacing: 0.06em;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
         
     background: var(--background-button-hero-color);
     color: var(--title-background-light-color);
 }
 
 
-.hero-btn-form {
-    position: absolute;
-    left: 536px;
-    top: 221px;
-    /*transform: translate(-50% -50%);*/
-    border-radius: 4px;
 
-    background-color: rgba(0,0,0,0.2);
-}
-
-.modal-close-button {
-    position: relative;
-}
-
-.form-close-button {
-    position: ;
-
-}
-
-.hero-form {    
-    /*width: 448px;
-    height: 501px;*/
-    padding: 40px;
-
-    background-color: var(--title-background-light-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-.hero-form-head {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 12px;
-    margin: 0px;
-
-    color: var(--title-dark-color);
-}
-
-.contact-label-input {
-    margin: 0px;
-    padding-bottom: 20px;
-}
-
-.label-input-item:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.contact-lable {
-    display: block;
-    margin-bottom: 4px;
-    
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-    letter-spacing: 0.01em;
-    text-align: left;
-}
-
-.contact-form {
-    display: block;
-    width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-comment {
-    height: 120px;
-}
-
-.form-input {
-    /*width: 448px;*/
-    height: 40px;
-}
-
-.hero-ckbx-agreement {
-    padding-bottom: 30px;
-}
-
-.agreement-link {
-    line-height: 24px;
-    /* identical to box height, or 171% */
-}
 
 
 
@@ -675,8 +590,7 @@ img {
     margin: 0px;
     padding: 14px 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: var(--background-footer-color);
-    /*box-sizing: border-box;*/
+    background-color: transparent;
     /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));*/
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -890,4 +804,141 @@ img {
     text-align: left;
     margin-left: 24px;
     margin-right: 24px;
+}
+
+
+
+/*backdrop*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+/*.hero-btn-form {
+   /* border-radius: 4px;
+
+    background-color: rgba(0,0,0,0.2);
+}*/
+
+.hero-form {    
+    /*width: 448px;
+    height: 501px;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    background-color: var(--title-background-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.hero-form-head {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    margin: 0px;
+
+    color: var(--title-dark-color);
+}
+
+.contact-label-input {
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.label-input-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.contact-lable {
+    display: block;
+    margin-bottom: 4px;
+    
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.contact-form {
+    display: block;
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form:hover,
+.contact-form:focus {
+    border-color: var(--accent-color);
+}
+
+.form-comment {
+    height: 120px;
+}
+
+.form-input {
+    height: 40px;
+}
+
+.form-coment {
+    margin: 0px;
+    padding: 12px 16px;
+}
+
+.agreement-checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+}
+
+.hero-form-agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.hero-form-agreement a {
+    line-height: 24px;
+    color: var(--accent-color);
+    /* identical to box height, or 171% */
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.form-close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
