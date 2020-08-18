@@ -596,6 +596,7 @@ img {
 .footer-form-mail input:hover,
 .footer-form-mail input:focus {
     border-color: var(--accent-color);
+    outline: none;
 }
 
 .footer-form-telegram {
