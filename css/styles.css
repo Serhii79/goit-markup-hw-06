@@ -275,9 +275,6 @@ img {
 
 
 
-
-
-
 /* features */
 
 .features {
@@ -506,9 +503,6 @@ img {
     flex-wrap: wrap;
     align-items: baseline;
     padding: 60px 0px;
-    /*padding-top: 60px;
-    padding-bottom: 60px;*/
-    /*height: 253px;*/
 }
 
 .footer-navigation-social-list:nth-child(1) {
@@ -937,7 +931,6 @@ img {
 .agreement-checkbox-hidden:checked ~ .agreement-checkbox-nochecked {
     opacity: 0;
 }
-
 
 .hero-form-agreement a {
     line-height: 24px;
