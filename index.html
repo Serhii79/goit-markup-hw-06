@@ -403,43 +403,53 @@
     </footer>
 
     <div data-modal class="backdrop is-hidden">
-        <!--div class="hero-btn-form"-->
-            
-            <form class="hero-form">                            
-                <p class="hero-form-head">Оставьте свои данные, мы вам перезвоним</p>
-                <button type="button" class="form-close-button"></button>
-                <ul class="contact-label-input list">
-                    <li class="label-input-item">
-                        <label for="user-name" class="contact-lable">Имя</label>
-                        <input type="text" class="contact-form form-input" id="user-name">
-                    </li>
-                    <li class="label-input-item">
-                        <label for="user-telephone" class="contact-lable">Телефон</label>
-                        <input type="tel" class="contact-form form-input" id="user-telephone">
-                    </li>
-                    <li class="label-input-item">
-                        <label for="user-mail" class="contact-lable">Почта</label>
-                        <input type="email" class="contact-form form-input" id="user-mail">
-                    </li>
-                    <li class="label-input-item">
-                        <label for="comment" class="contact-lable">Комментарий</label>
-                        <textarea name="comment" class="contact-form form-comment" id="comment" placeholder="Введите текст"></textarea>
-                    </li>
-                </ul>
-               <!--потрібно розмістити умови договору-->
-               <label for="" class="hero-form-agreement">
-                    <input type="checkbox" name="" id="" value="agree" class="agreement-checkbox-hidden">
-                    <span class="agreement-checkbox">
-
-                    </span>
-                    <span class="agreement-discription">
-                        Соглашаюсь с рассылкой и принимаю 
-                       <a href="#agreement">Условия договора</a>
-                    </span>
-                </label>
-               <button type="submit" class="hero-btn">Отправить</button>                            
-           </form>
-        <!--/div-->
+        <form class="hero-form">                            
+            <p class="hero-form-head">Оставьте свои данные, мы вам перезвоним</p>
+            <button data-modal-close type="button" class="form-close-button">
+                <svg class="form-close-button-icon" widht="11" height="11">
+                    <use href="./images-studio/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <div class="label-input-item">                        
+                <input type="text" class="contact-form form-input" id="user-name" placeholder=" ">
+                <label for="user-name" class="contact-lable">Имя</label>
+                <svg class="input-label-icon" width="12" height="12">
+                    <use href="./images-studio/sprite.svg#name"></use>
+                </svg>
+            </div>
+            <div class="label-input-item">                        
+                <input type="tel" class="contact-form form-input" id="user-telephone" placeholder=" ">
+                <label for="user-telephone" class="contact-lable">Телефон</label>
+                <svg class="input-label-icon" width="13" height="13">
+                    <use href="./images-studio/sprite.svg#telephone"></use>
+                </svg>
+            </div>
+            <div class="label-input-item">                        
+                <input type="email" class="contact-form form-input" id="user-mail" placeholder=" ">
+                <label for="user-mail" class="contact-lable">Почта</label>
+                <svg class="input-label-icon" width="15" height="12">
+                    <use href="./images-studio/sprite.svg#mail"></use>
+                </svg>
+            </div>
+            <div class="label-input-item">
+                <textarea name="comment" class="contact-form form-comment" id="comment" placeholder="Комментарий"></textarea>
+            </div>
+            <!--потрібно розмістити умови договору-->
+            <label class="hero-form-agreement">
+                <input type="checkbox" value="agree" class="agreement-checkbox-hidden">
+                <svg class="agreement-checkbox" width="16" height="15">
+                    <use href="./images-studio/sprite.svg#ckbox"></use>
+                </svg>
+                <svg class="agreement-checkbox-nochecked" width="16" height="15">
+                    <use href="./images-studio/sprite.svg#nockbox"></use>
+                </svg>
+                <span class="agreement-discription">
+                    Соглашаюсь с рассылкой и принимаю 
+                   <a href="#agreement">Условия договора</a>
+                </span>
+            </label>
+            <button type="submit" class="hero-btn">Отправить</button>                            
+        </form>
     </div>
     <script src="./js/modal.js"></script>
 </body>
